@@ -19,6 +19,10 @@
                     <x-nav-link :href="route('users.index')" :active="request()->routeIs('users.*')">
                         {{ __('Manage Users') }}
                     </x-nav-link>
+
+                    <x-nav-link :href="route('tasks.index')" :active="request()->routeIs('tasks.*')">
+                    {{ __('Manage Tasks') }}
+                </x-nav-link>
                 </div>
             </div>
 
@@ -77,6 +81,10 @@
 
             <x-responsive-nav-link :href="route('users.index')" :active="request()->routeIs('users.*')">
                 {{ __('Manage Users') }}
+            </x-responsive-nav-link>
+
+            <x-responsive-nav-link :href="route('tasks.index')" :active="request()->routeIs('tasks.*')">
+                {{ __('Manage Tasks') }}
             </x-responsive-nav-link>
         </div>
 
